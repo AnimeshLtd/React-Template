@@ -9,7 +9,6 @@
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
-    "start": "",
     "start:dev": "webpack-dev-server --mode development"
   },
   "devDependencies": {
