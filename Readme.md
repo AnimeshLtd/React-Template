@@ -27,7 +27,7 @@ Webpack uses *loaders* to process different types of files for bunding. It also 
 
 ## Workflow
 
-- `yarn dev:start` to start local development server with hot reloading. Runs at port `3000` by default, can be overridden
+- `yarn start:dev` to start local development server with hot reloading. Runs at port `3000` by default, can be overridden
   by setting `WEBPACK_DEV_SERVER_PORT` environment variable.
-- `yarn dev:build` to output bundled code to `dist` directory
+- `yarn build:dev` to output bundled code to `dist` directory
 - `yarn build` to output minified, optimised bundle for production
