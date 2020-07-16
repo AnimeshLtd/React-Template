@@ -37,11 +37,7 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       },
       {
-      /**
-       *  This rule processes CSS. Since we're not pre-processing our CSS, we just need to
-       *  add `style-loader` and `css-loader` to `use` property. `css-loader` requires
-       *  `style-loader` to work.
-       */
+      /** Load static files (images, PDFs, etc.) */
         test: /\.(png|jpe?g|gif)$/i,
         loader: "file-loader"
       }
