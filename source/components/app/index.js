@@ -1,17 +1,25 @@
+// @flow
+
 import * as React from "react"
-import { hot } from "react-hot-loader"
 
 import "./app.css"
 
-class App extends React.Component {
+type Props = {
+  image: {
+    heightPx: number,
+    /** Either absolute or relative to the `<project_root>/public` directory */
+    url: string
+  },
+  message: string
+}
+
+export default class App extends React.Component<Props> {
   render() {
     return (
       <div className="App">
-        <h1>Hello React!</h1>
-        <img src="./images/copyleft.png" height="40"></img>
+        <h1>{this.props.message}</h1>
+        <img src={this.props.image.url} height={this.props.image.heightPx + "px"}></img>
       </div>
     )
   }
 }
-
-export default hot(module)(App)
