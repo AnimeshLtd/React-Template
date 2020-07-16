@@ -7,12 +7,14 @@ A JavaScript build toolchain typically consists of:
 - A bundler to bundle all modules together into small packages to optimize load time. This project uses [Webpack](https://webpack.js.org/).
 - A transpiler to turn modern JavaScript code into old JavaScript that still works in older browsers. This project uses
   [Babel](https://babeljs.io/).
+- Optionally, a type system to enable static type checking. This project uses [Flow](https://flow.org) for type checking.
 
 ### Babel
 
 - `babel-core`: main Babel package; does most of the heavy lifting
 - `babel-cli`: compiles files from the command line
 - `preset-env`: Preset to transform ES6+ into more traditional JavaScript
+- `preset-flow`: Preset to transform Flow code into regular JavaScript
 - `preset-react`: Preset to transform React's JSX into valid JavaScript
 
 ### Webpack
